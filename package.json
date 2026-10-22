@@ -15,6 +15,6 @@
     "check:build": "python3 scripts/verify-build.py"
   },
   "dependencies": {
-    "astro": "7.3.8"
+    "astro": "7.4.0"
   }
 }
