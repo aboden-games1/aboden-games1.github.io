@@ -2,22 +2,22 @@
   "_note": "Owner request 2026-10-21: a «جديد» bar above the header on the home page only, showing the latest additions (newest first), no close button. To add one, put it first: {\"title\":\"\",\"line\":\"\",\"href\":\"<route>/\",\"image\":\"assets/...\"}. Add the English of title/line to i18n-en.json.",
   "items": [
     {
+      "title": "ذيبان",
+      "line": "لعبة ويب جديدة: تسلل في صحراء الخليج، العبها الحين",
+      "href": "games/theeban/",
+      "image": "assets/posters/theeban-keyart.webp"
+    },
+    {
+      "title": "صدى",
+      "line": "لعبة ألغاز جديدة: صداك يفتح لك الأبواب",
+      "href": "games/sada/",
+      "image": "assets/posters/sada-keyart.webp"
+    },
+    {
       "title": "كسّاب",
       "line": "لعبة ويب جديدة: تطعيس كسّاب، العبها الحين",
       "href": "games/kassab/",
       "image": "assets/posters/kassab-keyart.webp"
-    },
-    {
-      "title": "دحروج",
-      "line": "انطلقت على متجر Meta Quest، وجرّبها 15 دقيقة مجانًا",
-      "href": "games/dahrooj-quest/",
-      "image": "assets/posters/dahrooj-quest-keyart.webp"
-    },
-    {
-      "title": "عالم نجد",
-      "line": "ماب جديد في روبلوكس: سباق الكيبورد والدبدوب العملاق",
-      "href": "roblox/",
-      "image": "assets/roblox/najd-toybox.webp"
     }
   ]
 }

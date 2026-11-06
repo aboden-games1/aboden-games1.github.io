@@ -359,6 +359,143 @@
     "title": "كسّاب | عبودين قيمز"
    },
    "source": "Owner message 2026-10-25: «https://3wasfnjd.github.io/Kassab/ اضفها» with ten gameplay captures and the title screen. Description, controls and features from the game repository's own README (3wasfnjd/Kassab); the dedication is the game's title-screen line. Date is the day it was added to the site. Dedication rewritten by the owner's request 2026-10-25: «اكتب نبذة اهدا من الاستديو لصديقي محمد العمر ابوحصة صاحب كساب»."
+  },
+  {
+   "slug": "theeban",
+   "platform": "web",
+   "title": "ذيبان",
+   "titleEn": "Theeban",
+   "description": "لعبة تسلل تكتيكي: ذيبان يتسلل لمنشآت مياه سرية في صحراء الخليج يدوّر على أبوه المفقود.",
+   "released": "2026-11-06",
+   "webUrl": "https://3wasfnjd.github.io/Theeban/",
+   "genre": "تسلل",
+   "mobile": true,
+   "cardTag": "جديدة · الجوال بالعرض",
+   "keyArt": {
+    "src": "assets/posters/theeban-keyart.webp",
+    "alt": "ذيبان يتسلل في نقطة المراقبة، ومخاريط رؤية الحراس الخضراء حوله، في المهمة الأولى «صدى الرمال»",
+    "w": 1280,
+    "h": 720
+   },
+   "page": {
+    "kicker": "THEEBAN / WEB",
+    "headline": "ذيبان.",
+    "tagline": "تسلل في صحراء الخليج.",
+    "tag": "متصفح · جوال وكمبيوتر",
+    "pitch": [
+     "خمس مهمات.",
+     "ونهاية باختيارين."
+    ],
+    "howTo": "العصا يسار الشاشة للحركة (للآخر = ركض) · زر الوضعية: واقف ← منحني ← زاحف · زر الفعل يتغير حسب المكان · زر الكاميرا يبدّل المنظور · بالكيبورد: الحركة WASD · الركض Shift · الفعل E · الكاميرا V",
+    "body": [
+     "يتسلل ذيبان لمنشآت مياه سرية في صحراء الخليج بحثًا عن أبوه المفقود. التقدم ينحفظ في جهازك، والأفضل تلعبها على الجوال بالعرض."
+    ],
+    "facts": [
+     "مجانية · تنلعب في المتصفح · الأفضل على الجوال بالعرض",
+     "انضافت للموقع: ٦ نوفمبر ٢٠٢٦"
+    ],
+    "supportName": "ذيبان",
+    "supportLabel": "مساعدة بخصوص ذيبان",
+    "about": {
+     "title": [
+      "الصخور تغطيك واقف.",
+      "والصناديق تغطيك منحني."
+     ],
+     "paragraphs": [
+      "خمس مهمات: «صدى الرمال» في نقطة مراقبة منتصف الليل، و«تحت الرمال» في أنفاق الصيانة قبل الفجر، و«صوت بعيد» في مستودع معدات، و«عين الصحراء» في مركز مراقبة وقت عاصفة رملية، و«قلب السديم» في المحطة الخامسة قبل الشروق. وكل مهمة تعطيك أداة جديدة: كاشف الأثر، والنبّاه، والعازل، والزاحف.",
+      "الحارس يشوف داخل المخروط اللي قدامه: أخضر هادئ، وأصفر مشتبه، وأحمر إنذار. الزحف يقلل مدى الرؤية وتعبر فيه تحت الأنابيب، والركض يطلع صوت يجيب الحراس، والكشافات تمسح الساحة. تقدر تخدّر الحارس من وراه، وترمي كبسولة غاز، وتقطع الكهربا من المولد، وتختبي في حوض الوانيت.",
+      "وبعد المهمة الخامسة النهاية: غرفة الصمت ولقاء عبدالله، والاختيار بين نهايتين."
+     ]
+    },
+    "shots": [
+     {
+      "src": "assets/posters/theeban-shot-1.webp",
+      "alt": "المهمة الأولى «صدى الرمال»: نقطة مراقبة في منتصف الليل"
+     },
+     {
+      "src": "assets/posters/theeban-shot-2.webp",
+      "alt": "المهمة الثانية «تحت الرمال»: أنفاق الصيانة قبل الفجر"
+     },
+     {
+      "src": "assets/posters/theeban-shot-3.webp",
+      "alt": "المهمة الثالثة «صوت بعيد»: مستودع المعدات بالليل"
+     },
+     {
+      "src": "assets/posters/theeban-shot-4.webp",
+      "alt": "المهمة الرابعة «عين الصحراء»: مركز المراقبة وقت العاصفة الرملية"
+     },
+     {
+      "src": "assets/posters/theeban-shot-5.webp",
+      "alt": "المهمة الخامسة «قلب السديم»: المحطة الخامسة قبل الشروق، والحراس بكشافاتهم"
+     }
+    ],
+    "title": "ذيبان | عبودين قيمز"
+   },
+   "source": "Owner request 2026-11-06: «اضف فقط ذيبان وصدى» after the repository report. Text from the game repository's README (3wasfnjd/Theeban, v2.1); images are in-game captures of the released build taken on 2026-11-06. Date is the day it was added to the site."
+  },
+  {
+   "slug": "sada",
+   "platform": "web",
+   "title": "صدى",
+   "titleEn": "Sada",
+   "description": "لعبة ألغاز ثلاثية الأبعاد للجوال: ترجّع الزمن، وتطلع نسخة منك تعيد كل اللي سويته، وتستعين بأصدائك تفتح الأبواب.",
+   "released": "2026-11-06",
+   "webUrl": "https://3wasfnjd.github.io/Sada/",
+   "genre": "ألغاز",
+   "mobile": true,
+   "cardTag": "جديدة · الجوال",
+   "keyArt": {
+    "src": "assets/posters/sada-keyart.webp",
+    "alt": "شاشة بداية صدى: شعار اللعبة «صدى ECHO» وزر ابدأ",
+    "w": 1280,
+    "h": 720
+   },
+   "page": {
+    "kicker": "SADA / WEB",
+    "headline": "صدى.",
+    "tagline": "أصداؤك تفتح لك الأبواب.",
+    "tag": "متصفح · جوال",
+    "pitch": [
+     "ارجع بالزمن.",
+     "واستعن بنفسك."
+    ],
+    "howTo": "اسحب على الشاشة للحركة · «انتظر» يمرر خطوة · «صدى» يرجّع الزمن ويطلع صداك · التلميح والتراجع والإعادة من الأزرار تحت · بالكيبورد: الحركة بالأسهم · الانتظار بالمسافة",
+    "body": [
+     "كل جولة لها وقت محدود، والأبواب ما تنفتح إلا وأحد واقف على الدائرة المطابقة لها لونًا وشكلًا. اضغط «صدى» يرجع الزمن، وتطلع نسخة منك تعيد كل حركاتك."
+    ],
+    "facts": [
+     "مجانية · تنلعب في المتصفح · مصممة للجوال",
+     "انضافت للموقع: ٦ نوفمبر ٢٠٢٦"
+    ],
+    "supportName": "صدى",
+    "supportLabel": "مساعدة بخصوص صدى",
+    "about": {
+     "title": [
+      "غرف ما تخلص.",
+      "وكل غرفة لها حل."
+     ],
+     "paragraphs": [
+      "الغرف تتولّد بلا نهاية، وكل غرفة يتأكد المولّد آليًا إن لها حل.",
+      "أول الغرف تشرح نفسها: تعرض حلها مرة، وبعدين دورك. والأصداء نسخ زرقاء شفافة من بطل اللعبة، الغنوم."
+     ]
+    },
+    "shots": [
+     {
+      "src": "assets/posters/sada-shot-1.webp",
+      "alt": "الغرفة الثانية: الغنوم على دائرته، والباب المقفل قدام الضوء"
+     },
+     {
+      "src": "assets/posters/sada-shot-2.webp",
+      "alt": "بعد «صدى»: الصدى الأزرق الشفاف يعيد حركات الغنوم"
+     },
+     {
+      "src": "assets/posters/sada-shot-3.webp",
+      "alt": "الغنوم وصداه في نفس الغرفة، والباب ينتظر الدائرة"
+     }
+    ],
+    "title": "صدى | عبودين قيمز"
+   },
+   "source": "Owner request 2026-11-06: «اضف فقط ذيبان وصدى» after the repository report. Text from the game repository's README and CHANGELOG (3wasfnjd/Sada, v0.4.0); images are in-game captures of the released build taken on 2026-11-06. Date is the day it was added to the site."
   }
  ]
 }

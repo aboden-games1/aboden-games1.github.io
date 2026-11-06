@@ -144,5 +144,65 @@
     "source": "owner-supplied",
     "sha256": "230cf14c7b0c25370175021c547ca254de3ec29229d413805c0e4a7d207437c3",
     "note": "Owner's Kassab key art, sent 2026-10-25 «استبدلها بالبوستر» to replace the title-screen poster. Re-encoded to WebP at full size; no crop."
+  },
+  "theeban-keyart.webp": {
+    "source": "in-game-capture",
+    "repository": "3wasfnjd/Theeban",
+    "sha256": "1e564802613bffb70fed5a173a150cbdb22b78df9d1fca54c7bc3b74ae4d1470",
+    "note": "In-game capture of the released Theeban web build (v2.1), mission 1 «صدى الرمال», taken 2026-11-06 in Chromium at 1280x720, cropped to the game area and scaled to 1280x720. No editing."
+  },
+  "theeban-shot-1.webp": {
+    "source": "in-game-capture",
+    "repository": "3wasfnjd/Theeban",
+    "sha256": "0f20628042f228352fb6aefa26b2528c25443aec42efb867ba2db45b2a9095c1",
+    "note": "In-game capture of the released Theeban web build (v2.1), mission 1, taken 2026-11-06 in Chromium at 1280x720, cropped to the game area and scaled to 1280x720. No editing."
+  },
+  "theeban-shot-2.webp": {
+    "source": "in-game-capture",
+    "repository": "3wasfnjd/Theeban",
+    "sha256": "9b647bb5647dabcb13e15d64173caf73871db22070d7b3aa79d953e8a79d1065",
+    "note": "In-game capture of the released Theeban web build (v2.1), mission 2, taken 2026-11-06 in Chromium at 1280x720, cropped to the game area and scaled to 1280x720. No editing."
+  },
+  "theeban-shot-3.webp": {
+    "source": "in-game-capture",
+    "repository": "3wasfnjd/Theeban",
+    "sha256": "848590488cd93354892a1759ce0527afc8e2396f779ee206e060a70dd2d25f3c",
+    "note": "In-game capture of the released Theeban web build (v2.1), mission 3, taken 2026-11-06 in Chromium at 1280x720, cropped to the game area and scaled to 1280x720. No editing."
+  },
+  "theeban-shot-4.webp": {
+    "source": "in-game-capture",
+    "repository": "3wasfnjd/Theeban",
+    "sha256": "03614e998aec0756004e5b875ba7abfa5dcf50dd0574753554263a28bbda58b0",
+    "note": "In-game capture of the released Theeban web build (v2.1), mission 4, taken 2026-11-06 in Chromium at 1280x720, cropped to the game area and scaled to 1280x720. No editing."
+  },
+  "theeban-shot-5.webp": {
+    "source": "in-game-capture",
+    "repository": "3wasfnjd/Theeban",
+    "sha256": "bcd640f7a1789b37e3e41ae4699dc9bff488695a19bfb7c7a52eb1779fab1385",
+    "note": "In-game capture of the released Theeban web build (v2.1), mission 5, taken 2026-11-06 in Chromium at 1280x720, cropped to the game area and scaled to 1280x720. No editing."
+  },
+  "sada-keyart.webp": {
+    "source": "in-game-capture",
+    "repository": "3wasfnjd/Sada",
+    "sha256": "f65e0ac42c0cde1e2c120988c86d89c195582f4d5487ee3d0cdd62284d5edc99",
+    "note": "In-game capture of the released Sada web build (v0.4.0), title screen, taken 2026-11-06 in Chromium at 640x360 (device scale 2 → 1280x720). No editing."
+  },
+  "sada-shot-1.webp": {
+    "source": "in-game-capture",
+    "repository": "3wasfnjd/Sada",
+    "sha256": "a98ad7f81875bd32150292b2da49e941819172135d1f722508ee1567d44554a1",
+    "note": "In-game capture of the released Sada web build (v0.4.0), room 2, taken 2026-11-06 in Chromium at 1280x720. No editing."
+  },
+  "sada-shot-2.webp": {
+    "source": "in-game-capture",
+    "repository": "3wasfnjd/Sada",
+    "sha256": "f5a5360c83cb5c61f11565723661881faeb6b70c7ae4260901bc65077d6df6de",
+    "note": "In-game capture of the released Sada web build (v0.4.0), room 2 after «صدى» (echo), taken 2026-11-06 in Chromium at 1280x720. No editing."
+  },
+  "sada-shot-3.webp": {
+    "source": "in-game-capture",
+    "repository": "3wasfnjd/Sada",
+    "sha256": "5e29a0ba6c10a434be2413fa6815a2bc654865e72f86eedbba8686506794f3b3",
+    "note": "In-game capture of the released Sada web build (v0.4.0), room 2, gnome and echo, taken 2026-11-06 in Chromium at 1280x720. No editing."
   }
 }
