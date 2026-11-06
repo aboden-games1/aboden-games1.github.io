@@ -42,7 +42,7 @@ test('no unapproved cards, routes or fixtures appear in homepage',()=>{
  const studioWeb=studioGames().filter(g=>g.platform==='web');
  assert.equal((html.match(/data-project /g)||[]).length,8+studioWeb.length);assert.ok(!html.includes('test-fixture'));
  for(const g of studioWeb) assert.ok(html.includes(`games/${g.slug}/`));
- assert.equal((renderGames().match(/data-filter=/g)||[]).length,7);
+ assert.equal((renderGames().match(/data-filter=/g)||[]).length,9); // «الكل» + 8 genres (ذيبان «تسلل» and صدى «ألغاز» added 2026-11-06)
  for(const project of loadCatalog()) assert.ok(html.includes(project.slug==='ar-aboden'?'/ar/#experiences':'projects/'+project.slug+'/'));
  assert.ok(!html.includes('projects/aboden-fun/'));
 });
