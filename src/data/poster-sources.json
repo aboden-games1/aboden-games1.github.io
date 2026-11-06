@@ -181,28 +181,22 @@
     "sha256": "bcd640f7a1789b37e3e41ae4699dc9bff488695a19bfb7c7a52eb1779fab1385",
     "note": "In-game capture of the released Theeban web build (v2.1), mission 5, taken 2026-11-06 in Chromium at 1280x720, cropped to the game area and scaled to 1280x720. No editing."
   },
-  "sada-keyart.webp": {
+  "tayf-keyart.webp": {
     "source": "in-game-capture",
-    "repository": "3wasfnjd/Sada",
-    "sha256": "f65e0ac42c0cde1e2c120988c86d89c195582f4d5487ee3d0cdd62284d5edc99",
-    "note": "In-game capture of the released Sada web build (v0.4.0), title screen, taken 2026-11-06 in Chromium at 640x360 (device scale 2 → 1280x720). No editing."
+    "repository": "3wasfnjd/Tayf-Puzzle",
+    "sha256": "f96909237aebc7318fd121bfa62b09aa60740aa8cda65f416be81d0391a33bb5",
+    "note": "In-game capture of the released Tayf web build, title screen, taken 2026-11-07 in Chromium at 960x600 (device scale 4/3 → 1280x800). No editing."
   },
-  "sada-shot-1.webp": {
+  "tayf-shot-1.webp": {
     "source": "in-game-capture",
-    "repository": "3wasfnjd/Sada",
-    "sha256": "a98ad7f81875bd32150292b2da49e941819172135d1f722508ee1567d44554a1",
-    "note": "In-game capture of the released Sada web build (v0.4.0), room 2, taken 2026-11-06 in Chromium at 1280x720. No editing."
+    "repository": "3wasfnjd/Tayf-Puzzle",
+    "sha256": "c5b519539d431e5804562e7834590e0f0f59438c896ceb127dee4c9da40e5405",
+    "note": "In-game capture of the released Tayf web build, stage 1, «طيف جديد!» (new ghost), taken 2026-11-07 in Chromium at 960x600 (device scale 4/3 → 1280x800). No editing."
   },
-  "sada-shot-2.webp": {
+  "tayf-shot-2.webp": {
     "source": "in-game-capture",
-    "repository": "3wasfnjd/Sada",
-    "sha256": "f5a5360c83cb5c61f11565723661881faeb6b70c7ae4260901bc65077d6df6de",
-    "note": "In-game capture of the released Sada web build (v0.4.0), room 2 after «صدى» (echo), taken 2026-11-06 in Chromium at 1280x720. No editing."
-  },
-  "sada-shot-3.webp": {
-    "source": "in-game-capture",
-    "repository": "3wasfnjd/Sada",
-    "sha256": "5e29a0ba6c10a434be2413fa6815a2bc654865e72f86eedbba8686506794f3b3",
-    "note": "In-game capture of the released Sada web build (v0.4.0), room 2, gnome and echo, taken 2026-11-06 in Chromium at 1280x720. No editing."
+    "repository": "3wasfnjd/Tayf-Puzzle",
+    "sha256": "dc2f349d2af0ea3f68706ff4e714a723a3428542eddad75b42fd89ee8b22992a",
+    "note": "In-game capture of the released Tayf web build, stage 1, the cube walking with its ghost, taken 2026-11-07 in Chromium at 960x600 (device scale 4/3 → 1280x800). No editing."
   }
 }

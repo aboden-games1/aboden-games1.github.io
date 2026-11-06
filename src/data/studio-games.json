@@ -434,68 +434,64 @@
    "source": "Owner request 2026-11-06: «اضف فقط ذيبان وصدى» after the repository report. Text from the game repository's README (3wasfnjd/Theeban, v2.1); images are in-game captures of the released build taken on 2026-11-06. Date is the day it was added to the site."
   },
   {
-   "slug": "sada",
+   "slug": "tayf",
    "platform": "web",
-   "title": "صدى",
-   "titleEn": "Sada",
-   "description": "لعبة ألغاز ثلاثية الأبعاد للجوال: ترجّع الزمن، وتطلع نسخة منك تعيد كل اللي سويته، وتستعين بأصدائك تفتح الأبواب.",
-   "released": "2026-11-06",
-   "webUrl": "https://3wasfnjd.github.io/Sada/",
+   "title": "طيف",
+   "titleEn": "Tayf",
+   "description": "لعبة ألغاز: عندك خطوات محدودة في كل دورة، ولما تخلص ترجع للبداية ومشيك يصير طيفًا يعيد خطواتك وأنت تمشي معه.",
+   "released": "2026-11-07",
+   "webUrl": "https://3wasfnjd.github.io/Tayf-Puzzle/",
    "genre": "ألغاز",
    "mobile": true,
    "cardTag": "جديدة · الجوال",
    "keyArt": {
-    "src": "assets/posters/sada-keyart.webp",
-    "alt": "شاشة بداية صدى: شعار اللعبة «صدى ECHO» وزر ابدأ",
+    "src": "assets/posters/tayf-keyart.webp",
+    "alt": "شاشة بداية طيف: المكعب البرتقالي وطيفين أزرق، وشعار «طيف» واختيار لون المكعب",
     "w": 1280,
-    "h": 720
+    "h": 800
    },
    "page": {
-    "kicker": "SADA / WEB",
-    "headline": "صدى.",
-    "tagline": "أصداؤك تفتح لك الأبواب.",
+    "kicker": "TAYF / WEB",
+    "headline": "طيف.",
+    "tagline": "كل محاولة تترك طيفًا.",
     "tag": "متصفح · جوال",
     "pitch": [
-     "ارجع بالزمن.",
-     "واستعن بنفسك."
+     "كل محاولة تترك طيفًا يعيد خطواتك…",
+     "ويفتح لك الطريق."
     ],
-    "howTo": "اسحب على الشاشة للحركة · «انتظر» يمرر خطوة · «صدى» يرجّع الزمن ويطلع صداك · التلميح والتراجع والإعادة من الأزرار تحت · بالكيبورد: الحركة بالأسهم · الانتظار بالمسافة",
+    "howTo": "اسحب أو استخدم الأسهم للمشي · «انتظر» يمرر خطوة، والضغط المطوّل عليه يخلّص الدورة ويحوّل مشيك لطيف · «تراجع» يرجع خطوة · «تلميح» إذا علقت",
     "body": [
-     "كل جولة لها وقت محدود، والأبواب ما تنفتح إلا وأحد واقف على الدائرة المطابقة لها لونًا وشكلًا. اضغط «صدى» يرجع الزمن، وتطلع نسخة منك تعيد كل حركاتك."
+     "الباب ينفتح بس وأحد واقف على دائرته، فخلّ طيفك يمسك الباب وأنت تعبر للنجمة. وتختار لون مكعبك من شاشة البداية."
     ],
     "facts": [
      "مجانية · تنلعب في المتصفح · مصممة للجوال",
-     "انضافت للموقع: ٦ نوفمبر ٢٠٢٦"
+     "انضافت للموقع: ٧ نوفمبر ٢٠٢٦"
     ],
-    "supportName": "صدى",
-    "supportLabel": "مساعدة بخصوص صدى",
+    "supportName": "طيف",
+    "supportLabel": "مساعدة بخصوص طيف",
     "about": {
      "title": [
-      "غرف ما تخلص.",
-      "وكل غرفة لها حل."
+      "مراحل ما تخلص.",
+      "وكل مرحلة تحتاج طيف."
      ],
      "paragraphs": [
-      "الغرف تتولّد بلا نهاية، وكل غرفة يتأكد المولّد آليًا إن لها حل.",
-      "أول الغرف تشرح نفسها: تعرض حلها مرة، وبعدين دورك. والأصداء نسخ زرقاء شفافة من بطل اللعبة، الغنوم."
+      "المراحل تتولّد بلا نهاية، وكل مرحلة يتأكد المولّد آليًا إن لها حل وإنها تحتاج طيفًا.",
+      "الشخصية مكعب بعيون وتعابير: يفرح، ويقلق، ويرمش، ويطالع جهة مشيه. والأطياف نفس المكعب أزرق شفاف يطفو."
      ]
     },
     "shots": [
      {
-      "src": "assets/posters/sada-shot-1.webp",
-      "alt": "الغرفة الثانية: الغنوم على دائرته، والباب المقفل قدام الضوء"
+      "src": "assets/posters/tayf-shot-1.webp",
+      "alt": "المرحلة الأولى: «طيف جديد!» والطيف الأزرق عند دائرة الباب"
      },
      {
-      "src": "assets/posters/sada-shot-2.webp",
-      "alt": "بعد «صدى»: الصدى الأزرق الشفاف يعيد حركات الغنوم"
-     },
-     {
-      "src": "assets/posters/sada-shot-3.webp",
-      "alt": "الغنوم وصداه في نفس الغرفة، والباب ينتظر الدائرة"
+      "src": "assets/posters/tayf-shot-2.webp",
+      "alt": "المكعب يمشي مع طيفه الأزرق في الدورة الثانية"
      }
     ],
-    "title": "صدى | عبودين قيمز"
+    "title": "طيف | عبودين قيمز"
    },
-   "source": "Owner request 2026-11-06: «اضف فقط ذيبان وصدى» after the repository report. Text from the game repository's README and CHANGELOG (3wasfnjd/Sada, v0.4.0); images are in-game captures of the released build taken on 2026-11-06. Date is the day it was added to the site."
+   "source": "Owner, 2026-11-07: «توقف صدى لا ترفعها للموقع … تم تعديلها الى اسم طيف» then the link https://3wasfnjd.github.io/Tayf-Puzzle/. Replaces the Sada entry added the day before. Text from the game repository's README and CHANGELOG (3wasfnjd/Tayf-Puzzle) and its title screen; images are in-game captures of the released web build taken 2026-11-07."
   }
  ]
 }
