@@ -14,8 +14,8 @@
 - Owner instruction: «احذف الرماية بالواقع المعزز». AR-Shooter must stay out of the directory, search, detail routes, published covers and license source list unless explicitly reapproved. Do not delete or modify its original repository.
 - Owner instruction: «عدل صورة هجولة وحط صورة الواجهه للعبه اللي فيها شاص». Use the actual Hajwala images/menu/menu-bg.jpg artwork, verified against its source Git blob. Do not invent artwork or use the old racetrack screenshot.
 - ~~Keep preview mode and noindex until public indexing is explicitly approved.~~ Superseded 2026-10-21: the owner opened search indexing (see the last section).
-- Pages currently serves main at the repository root. The publication workflow validates, builds Astro, commits generated static files and explicitly requests a Pages build. `.nojekyll` prevents Jekyll from parsing Astro source.
-- Edit `src/` and `public/`, NOT generated root HTML/CSS/JS. `scripts/sync-pages.mjs` and `.pages-files.json` manage generated files and remove obsolete generated pages.
+- Pages is deployed by GitHub Actions (Settings → Pages → Source: GitHub Actions; owner request 2026-11-06 after Search Console «Indexed, though blocked by robots.txt»). `deploy.yml` validates, builds Astro, assembles `_site/` with `scripts/build-pages-artifact.mjs` (the build + files published earlier that `.pages-files.json` lists) and deploys only that, so repository files are never served (they answer 404). The generated root HTML/CSS/JS in the repository is the last branch-published copy, kept as a fallback (switching Source back to «Deploy from a branch», main, root, serves it); it is no longer updated.
+- Edit `src/` and `public/`, NOT generated root HTML/CSS/JS. `scripts/sync-pages.mjs` belongs to the old branch publishing and is no longer run.
 - Keep Arabic RTL/mobile-first design. Respect browser zoom and reduced-motion preferences.
 - Run `npm test` and `npm run build` before release. Do not bypass approval validation.
 - The portal itself is not a project card. Future repositories still require explicit approval.

@@ -5,13 +5,12 @@ on:
     paths-ignore: ['build-info.json']
   workflow_dispatch:
 permissions:
-  contents: write
-  pages: write
+  contents: read
 concurrency:
   group: publish-built-pages
   cancel-in-progress: false
 jobs:
-  publish:
+  build:
     if: github.repository == 'aboden-games1/aboden-games1.github.io'
     runs-on: ubuntu-latest
     timeout-minutes: 15
@@ -25,51 +24,52 @@ jobs:
       - name: Validate approvals, preserve games and policies, build
         run: npm run build
       - run: python3 scripts/verify-build.py
-      - name: Prepare Pages without deleting existing files
-        run: node scripts/sync-pages.mjs
-      - name: Commit generated site
+      - name: Assemble the Pages artifact (build output only; repository source is not published)
+        run: node scripts/build-pages-artifact.mjs
+      - uses: actions/upload-pages-artifact@fc324d3547104276b827a68afc52ff2a11cc49c9 # v5.0.0
+        with:
+          path: _site
+  # Owner request 2026-11-06 (Search Console «Indexed, though blocked by robots.txt»): Pages serves this artifact only,
+  # so repository files (src/, tests/, *.md …) return 404. Needs Settings → Pages → Source: GitHub Actions.
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@368f82528645a54fb793d4d04e342629a3f51346 # v5.0.1
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+      - name: Verify published revision, pages, policies and that repository files are gone
         run: |
-          # A newer merge on main has its own run (queued behind this one); let it publish instead of racing it.
-          git fetch --quiet origin main
-          if [ "$(git rev-parse origin/main)" != "$GITHUB_SHA" ]; then
-            echo "::notice::main moved past $GITHUB_SHA; the newer run publishes the site."
-            echo "SUPERSEDED=1" >> "$GITHUB_ENV"
-            exit 0
-          fi
-          if ! git diff --cached --quiet; then
-            git config user.name 'github-actions[bot]'
-            git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-            git commit -m 'Publish verified Aboden Games studio [skip ci]'
-            git push origin HEAD:main
-          fi
-          echo "PUBLISHED_HEAD=$(git rev-parse HEAD)" >> "$GITHUB_ENV"
-      - name: Request Pages publication
-        if: env.SUPERSEDED != '1'
-        env:
-          GH_TOKEN: ${{ github.token }}
-        run: gh api --method POST "repos/$GITHUB_REPOSITORY/pages/builds"
-      - name: Verify published revision and preserved privacy policy
-        if: env.SUPERSEDED != '1'
-        run: |
-          for attempt in $(seq 1 30); do
+          for attempt in $(seq 1 40); do
             if curl --connect-timeout 10 --max-time 20 -fsS "https://abodengames.com/build-info.json?revision=${GITHUB_SHA}" -o /tmp/live-build.json && jq -e --arg sha "$GITHUB_SHA" '.source == $sha' /tmp/live-build.json >/dev/null; then
               python3 scripts/verify-published.py
-              exit 0
-            fi
-            if [ "$(git ls-remote origin refs/heads/main | cut -f1)" != "$PUBLISHED_HEAD" ]; then
-              echo "::notice::A newer commit reached main while waiting; its run verifies the live site."
+              for path in sitemap.xml robots.txt CNAME en/ play/kassab/ ar-lab/ privacy-policies/dahrooj-meta-quest.html; do
+                test "$(curl -s -o /dev/null -w '%{http_code}' "https://abodengames.com/$path")" = 200 || { echo "::error::$path is not 200"; exit 1; }
+              done
+              for path in AGENTS.md README.md src/lib/site.ts tests/studio.test.ts scripts/verify-build.py package.json public/robots.txt stats-worker/README.md migration/destination-original-sha256.json Text.text; do
+                code=$(curl -s -o /dev/null -w '%{http_code}' "https://abodengames.com/$path")
+                test "$code" = 404 || { echo "::error::repository file $path answers $code, expected 404"; exit 1; }
+              done
+              echo "VERIFIED site pages 200, repository files 404"
               exit 0
             fi
             sleep 5
           done
           exit 1
       - name: Tell search engines what changed (IndexNow — Bing, Yandex, Seznam, Naver)
-        if: env.SUPERSEDED != '1'
         continue-on-error: true
         env:
           INDEXNOW_KEY: df1dae49e31b378c3f151625ceca736b
         run: |
-          grep -o '<loc>[^<]*' dist/sitemap.xml | sed 's/<loc>//' > /tmp/urls.txt
+          curl -fsS https://abodengames.com/sitemap.xml | grep -o '<loc>[^<]*' | sed 's/<loc>//' > /tmp/urls.txt
           jq -n --arg key "$INDEXNOW_KEY" --rawfile urls /tmp/urls.txt \
             '{host:"abodengames.com",key:$key,keyLocation:("https://abodengames.com/"+$key+".txt"),urlList:($urls|split("\n")|map(select(length>0)))}' > /tmp/indexnow.json
           curl --connect-timeout 10 --max-time 30 -sS -o /dev/null -w 'IndexNow HTTP %{http_code}\n' \
