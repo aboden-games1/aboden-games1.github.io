@@ -1,16 +1,6 @@
 # abodengames.com — search indexing opened by the owner on 2026-10-21.
+# Since 2026-11-06 only the built site is published; repository files answer 404, so nothing needs blocking here.
 User-agent: *
 Allow: /
-# Repository files GitHub Pages also serves; not part of the site.
-Disallow: /src/
-Disallow: /tests/
-Disallow: /scripts/
-Disallow: /migration/
-Disallow: /privacy-drafts/
-Disallow: /stats-worker/
-Disallow: /node_modules/
-Disallow: /.github/
-Disallow: /*.md$
-Disallow: /Text.text
 
 Sitemap: https://abodengames.com/sitemap.xml
