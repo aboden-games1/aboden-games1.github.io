@@ -49,12 +49,12 @@ test('no unapproved cards, routes or fixtures appear in homepage',()=>{
 test('RTL and search indexing are explicit (owner opened indexing 2026-10-21)',()=>{
  const html=renderHome();assert.ok(html.includes('lang="ar" dir="rtl"'));assert.ok(html.includes('content="index, follow'));assert.ok(renderNotFound().includes('noindex, follow'));
 });
-test('approved cards and launch links do not require JavaScript',()=>{const html=renderHome();for(const p of loadCatalog()){assert.ok(html.includes(p.title));assert.ok(html.includes(p.slug==='ar-aboden'?'/ar/#experiences':'/play/'+p.slug+'/'));}});
+test('approved cards and launch links do not require JavaScript',()=>{const html=renderHome();for(const p of loadCatalog()){assert.ok(html.includes(p.title));assert.ok(html.includes(p.slug==='ar-aboden'?'/ar/#experiences':`href="${p.liveUrl}" target="_blank" rel="noopener noreferrer" data-play="${p.slug}"`));}});
 test('no launch link without a verified URL',()=>{
  const html=renderProject(fixture);assert.ok(!html.includes('العب الآن'));assert.ok(html.includes('لا تتوفر نسخة تشغيل'));
 });
 test('launch links open safely',()=>{
- const html=renderProject({...fixture,liveUrl:'https://example.com/test'});assert.ok(html.includes('العب الآن'));assert.ok(html.includes('href="/play/test-fixture/"'));assert.ok(!html.includes('href="https://example.com/test"'));
+ const html=renderProject({...fixture,liveUrl:'https://example.com/test'});assert.ok(html.includes('العب الآن'));assert.ok(html.includes('href="https://example.com/test" target="_blank" rel="noopener noreferrer" data-play="test-fixture"')); // games open in their own tab (owner 2026-11-07)
 });
 test('unverified device claims do not appear',()=>assert.ok(!renderProject(fixture).includes('الأجهزة التي تم التحقق منها')));
 test('project text cannot inject HTML',()=>assert.ok(!renderProject({...fixture,title:'<script>alert(1)</script>'}).includes('<script>alert(1)</script>')));

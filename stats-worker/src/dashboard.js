@@ -116,7 +116,7 @@ table{width:100%;border-collapse:collapse;font-variant-numeric:tabular-nums;marg
 <div class="card" style="--c:var(--blue)"><h2 style="margin-bottom:10px">🔗 من وين جوا <small class="muted">٧ أيام</small></h2><ul class="bars" id="refs"></ul></div>
 </section>
 <section class="card notes"><h2 style="margin-bottom:8px">📝 ملاحظات</h2><ul>
-<li>«يلعبون الحين» = صفحة اللعب مفتوحة عندهم آخر دقيقتين. «مرات اللعب» = فتح صفحة «العب الآن» في موقعنا.</li>
+<li>«مرات اللعب» = ضغطات زر «العب الآن» في موقعنا. من ٧ نوفمبر ٢٠٢٦ ألعاب الويب تنفتح في تبويب لحالها برا الموقع، فـ«يلعبون الحين» و«دقائق اللعب» لها ما تنحسب.</li>
 <li>ميتا ما تعطي أرقام المبيعات واللاعبين برا لوحة المطورين؛ قسم ميتا كويست فيه زيارات صفحات ألعاب كويست في موقعنا وضغطات زر المتجر.</li>
 <li id="note-roblox" hidden>أرقام روبلوكس تطلع بعد ربط أرقام التجارب (Start Place ID).</li>
 <li>بدون كوكيز وبدون تخزين عناوين IP. العدّ بتوقيت السعودية من يوم تركيب العداد، والصفحة تتحدث كل ٣٠ ثانية.</li></ul></section>

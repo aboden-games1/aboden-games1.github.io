@@ -105,16 +105,15 @@ test('English edition: every page fully translated, LTR, linked both ways',()=>{
   assert.doesNotMatch(en.replace(/<a class="lang-switch"[^>]*>عربي<\/a>/,"").replace(/hreflang="ar" href="[^"]*"/,""),/href="\/(games|ar|studio|team|support|contact|licenses|projects)\//);
  }
 });
-test('play pages keep players on abodengames.com: no GitHub links anywhere in the studio UI',()=>{
+test('games open in their own tab (owner 2026-11-07); old play pages forward there; no github.com links in the studio UI',()=>{
  const games=loadCatalog().filter(p=>p.liveUrl&&p.slug!=='ar-aboden');
  for(const p of games){
   const html=renderPlay(p);
-  assert.ok(html.includes(`<iframe class="play-frame" src="${p.liveUrl}"`));
-  assert.match(html,/frame-src https:\/\/3wasfnjd\.github\.io/);
+  assert.ok(html.includes(`<meta http-equiv="refresh" content="0; url=${p.liveUrl}"/>`)); // old play links forward to the game (owner 2026-11-07)
   const en=toEnglish(html);assert.match(en,/<html lang="en"/);
   assert.equal((en.replace(/<a class="lang-switch"[^>]*>عربي<\/a>/,'').replace(/<[^>]*>/g,' ').match(/[\u0600-\u06FF]/g)||[]).length,0);
  }
- for(const html of [renderHome(),renderGames(),...games.map(p=>renderProject(p))])assert.doesNotMatch(html,/href="https?:\/\/[^"]*github/);
+ for(const html of [renderHome(),renderGames(),...games.map(p=>renderProject(p))]){assert.doesNotMatch(html,/href="https?:\/\/(?:www\.)?github\.com/);for(const m of html.matchAll(/href="(https:\/\/3wasfnjd\.github\.io\/[^"]*)"([^>]*)>/g))assert.match(m[2],/target="_blank" rel="noopener noreferrer" data-play=/);}
 });
 test('search: sitemap lists every indexable page in both languages, play pages stay noindex, JSON-LD is safe',async()=>{
  const {sitemapRoutes,renderSitemap,renderStudioPlay,renderStudioGame,studioGames}=await import('../src/lib/site.ts');
