@@ -42,7 +42,14 @@ if(typeof document!=='undefined') {
  // iPhone: a game's sound plays even with the silent switch on (Safari 16.4+)
  if(frame){try{if(navigator.audioSession)navigator.audioSession.type='playback';}catch{}}
  frame?.addEventListener('load',()=>frame.focus());
- if(frame&&fs&&(document.fullscreenEnabled||document.webkitFullscreenEnabled)){fs.hidden=false;fs.addEventListener('click',()=>{const el=document.querySelector('.play-page');(el.requestFullscreen||el.webkitRequestFullscreen)?.call(el);});}
+ // Full screen (owner 2026-11-07): real full screen where the browser allows it; elsewhere (iPhone) the game covers the
+ // page without the site header or bar. ✕ leaves either. A phone held sideways gets the same view by itself (refresh.css).
+ if(frame&&fs){
+  const page=document.querySelector('.play-page'),exit=document.querySelector('[data-play-exit]'),real=document.fullscreenEnabled||document.webkitFullscreenEnabled;
+  const inReal=()=>document.fullscreenElement||document.webkitFullscreenElement;
+  fs.addEventListener('click',()=>{if(real)(page.requestFullscreen||page.webkitRequestFullscreen).call(page);else{document.body.classList.add('play-immersive');scrollTo(0,0);}frame.focus();});
+  exit?.addEventListener('click',()=>{if(inReal())(document.exitFullscreen||document.webkitExitFullscreen).call(document);document.body.classList.remove('play-immersive');});
+ }
  // Time-limited offers: hide once their last day (Riyadh time) has passed.
  document.querySelectorAll('[data-ends]').forEach(el=>{const end=new Date(el.dataset.ends+'T23:59:59+03:00');if(!isNaN(end)&&Date.now()>end)el.hidden=true;});
  // Home «جديد» bar: show one addition at a time, every 5 s; pauses on hover/focus, swipe on touch, still with reduced motion.
