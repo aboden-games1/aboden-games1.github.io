@@ -198,5 +198,16 @@
     "repository": "3wasfnjd/Tayf-Puzzle",
     "sha256": "dc2f349d2af0ea3f68706ff4e714a723a3428542eddad75b42fd89ee8b22992a",
     "note": "In-game capture of the released Tayf web build, stage 1, the cube walking with its ghost, taken 2026-11-07 in Chromium at 960x600 (device scale 4/3 → 1280x800). No editing."
+  },
+  "bawwabat-keyart.webp": {
+    "source": "owner-supplied",
+    "sha256": "c9304297e5c587fe22b0c02f5a708642e7504cbefd5558a113925c35e601be11",
+    "note": "Owner's iPhone screenshot of the published web build (stage 2), sent 2026-11-07; cropped to the board (status bar, level buttons, joystick and Safari bar left out) and re-encoded to WebP. No other editing."
+  },
+  "bawwabat-shot-1.webp": {
+    "source": "in-game-capture",
+    "repository": "3wasfnjd/Mafateeh",
+    "sha256": "6f4a1951d7fe2aed3adceb0aa55c4d9d787f0d8c520de65a02391d2c21d77b8c",
+    "note": "In-game capture of the published web build at https://3wasfnjd.github.io/Mafateeh/ (stage 1), taken 2026-11-07 in Chromium at 1280x720 by a GitHub Actions run. No editing."
   }
 }
