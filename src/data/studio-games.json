@@ -89,8 +89,7 @@
    "description": "ألغاز هادئة مع الشايب في عالم نجدي مصغّر يطلع على طاولتك بالواقع المختلط: بيوت الطين والمخيم والسوق، حتى صندوق الجد.",
    "released": "2026-10-20",
    "storeUrl": "https://www.meta.com/experiences/app/1431517553369145/",
-   "webUrl": "https://3wasfnjd.github.io/Mafateeh/",
-   "playDescription": "العب مفاتيح مجانًا في المتصفح: نفس مراحل الشايب وألغازه، باللمس أو الماوس.",
+   "webUrl": "",
    "keyArt": {
     "src": "assets/posters/mafateeh-quest-keyart.webp",
     "alt": "الصورة الرئيسية لمفاتيح: الشايب والقط والصقر وصندوق الجد في حوش نجدي",
@@ -102,10 +101,6 @@
     {
      "icon": "quest",
      "text": "أُطلقت على متجر Meta Horizon في ٢٠ أكتوبر ٢٠٢٦"
-    },
-    {
-     "icon": "web",
-     "text": "وتنلعب مجانًا في المتصفح"
     }
    ],
    "mixedReality": "عالم نجدي مصغّر يطلع على طاولتك بالواقع المختلط.",
@@ -121,11 +116,9 @@
      "إحدى عشرة مرحلة مع الشايب: ترسم درب القط، وترسل الصقر، وتطلّع الوايت من بين السيارات، وتولّع الفوانيس، وتصد الغزوة، حتى تفتح صندوق الجد. المشهد على قاعدة خشبية تحت قبة زجاجية، يطلع على طاولتك أو أرضك بالواقع المختلط."
     ],
     "facts": [
-     "مجانية · بالعربية والإنجليزية · <bdi>Meta Quest 3 / 3S</bdi> · المتصفح",
+     "مجانية · بالعربية والإنجليزية · <bdi>Meta Quest 3 / 3S</bdi>",
      "تاريخ الإطلاق في المتجر: ٢٠ أكتوبر ٢٠٢٦"
     ],
-    "webPlayLabel": "العب مجانًا في المتصفح",
-    "webPlayNote": "نفس المراحل والألغاز على الجوال أو الكمبيوتر: باللمس أو الماوس، والطاولة في درعية افتراضية.",
     "supportName": "مفاتيح — Meta Quest",
     "supportLabel": "مساعدة بخصوص مفاتيح",
     "about": {
@@ -165,14 +158,13 @@
     "title": "مفاتيح — Meta Quest | عبودين قيمز"
    },
    "source": "Owner instruction 2026-10-20: «الان نبي نضيفه في موقع عبودين قيمز» — the owner's Meta Quest game Mafateeh, released on the Meta Horizon Store on 2026-10-20.",
-   "webSource": "Owner instruction 2026-10-21: «نقدر نحول مفاتيح ويب بنفس التصميم والديزاين والالغاز» then «في الويب ابيها مجانيه بعد عادي» — the full game, free, built from the Quest project for the browser.",
+   "webSource": "Superseded 2026-11-07: the owner said the web build at 3wasfnjd.github.io/Mafateeh/ is a different game from the Shayeb Quest game («لعبة الويب طلعها صفحة لحالها لانها تختلف عن الشايب وعطها اسم ثاني مختلف»); it is now its own studio web game «بوابات» (slug bawwabat).",
    "spotlight": {
     "order": 2,
     "alt": "مفاتيح: الشايب والقط والصقر وصندوق الجد في حوش نجدي — Meta Quest",
     "cta": "اكتشف مفاتيح",
     "label": "MAFATEEH",
-    "line": "ألغاز هادئة مع الشايب في عالم نجدي يطلع على طاولتك. أُطلقت ٢٠ أكتوبر ٢٠٢٦.",
-    "play": "العب مجانًا في المتصفح"
+    "line": "ألغاز هادئة مع الشايب في عالم نجدي يطلع على طاولتك. أُطلقت ٢٠ أكتوبر ٢٠٢٦."
    }
   },
   {
@@ -492,6 +484,52 @@
     "title": "طيف | عبودين قيمز"
    },
    "source": "Owner, 2026-11-07: «توقف صدى لا ترفعها للموقع … تم تعديلها الى اسم طيف» then the link https://3wasfnjd.github.io/Tayf-Puzzle/. Replaces the Sada entry added the day before. Text from the game repository's README and CHANGELOG (3wasfnjd/Tayf-Puzzle) and its title screen; images are in-game captures of the released web build taken 2026-11-07."
+  },
+  {
+   "slug": "bawwabat",
+   "platform": "web",
+   "title": "بوابات",
+   "titleEn": "Bawwabat",
+   "description": "لعبة ألغاز للجوال: دف الصناديق على الأزرار عشان تنفتح البوابة وتعبر، في ٢١ مرحلة.",
+   "released": "2026-11-07",
+   "webUrl": "https://3wasfnjd.github.io/Mafateeh/",
+   "genre": "ألغاز",
+   "mobile": true,
+   "cardTag": "جديدة · الجوال",
+   "keyArt": {
+    "src": "assets/posters/bawwabat-keyart.webp",
+    "alt": "المرحلة الثانية من بوابات: الشخصية البرتقالية وصندوقين، وزرين أصفر موصولين بالبوابة",
+    "w": 1206,
+    "h": 840
+   },
+   "page": {
+    "kicker": "BAWWABAT / WEB",
+    "headline": "بوابات.",
+    "tagline": "دف الصندوق، تنفتح البوابة.",
+    "tag": "متصفح · جوال",
+    "pitch": [
+     "٢١ مرحلة.",
+     "وكل مرحلة لها بوابة."
+    ],
+    "howTo": "حرّك الشخصية بالعصا تحت يسار الشاشة · دف الصندوق على الزر الأصفر عشان تنفتح البوابة · المراحل بالأرقام فوق، وتنفتح وحدة ورا الثانية",
+    "body": [
+     "ساحة بجدران، وصناديق، وأزرار موصولة بالبوابة. حط الصناديق في مكانها، وتنفتح البوابة وتعبر للمرحلة اللي بعدها."
+    ],
+    "facts": [
+     "مجانية · تنلعب في المتصفح · الأفضل على الجوال",
+     "انضافت للموقع: ٧ نوفمبر ٢٠٢٦"
+    ],
+    "supportName": "بوابات",
+    "supportLabel": "مساعدة بخصوص بوابات",
+    "shots": [
+     {
+      "src": "assets/posters/bawwabat-shot-1.webp",
+      "alt": "المرحلة الأولى: الشخصية والصندوق والزر قدام البوابة"
+     }
+    ],
+    "title": "بوابات | عبودين قيمز"
+   },
+   "source": "Owner, 2026-11-07: «لعبة الويب طلعها صفحة لحالها لانها تختلف عن الشايب وعطها اسم ثاني مختلف»; name chosen by the owner from proposals («بوابات»); the owner confirmed with a screenshot of stage 2 that this is the game at https://3wasfnjd.github.io/Mafateeh/. Text describes only what the published build shows (stages 1–2 seen, 21 stage buttons). Key art = the owner's screenshot (cropped to the board); the gallery shot is an in-game capture taken through GitHub Actions."
   }
  ]
 }

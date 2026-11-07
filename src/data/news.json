@@ -2,6 +2,12 @@
   "_note": "Owner request 2026-10-21: a «جديد» bar above the header on the home page only, showing the latest additions (newest first), no close button. To add one, put it first: {\"title\":\"\",\"line\":\"\",\"href\":\"<route>/\",\"image\":\"assets/...\"}. Add the English of title/line to i18n-en.json.",
   "items": [
     {
+      "title": "بوابات",
+      "line": "لعبة ألغاز جديدة: دف الصناديق وافتح البوابات",
+      "href": "games/bawwabat/",
+      "image": "assets/posters/bawwabat-keyart.webp"
+    },
+    {
       "title": "ذيبان",
       "line": "لعبة ويب جديدة: تسلل في صحراء الخليج، العبها الحين",
       "href": "games/theeban/",
@@ -12,12 +18,6 @@
       "line": "لعبة ألغاز جديدة: كل محاولة تترك طيفًا يفتح لك الطريق",
       "href": "games/tayf/",
       "image": "assets/posters/tayf-keyart.webp"
-    },
-    {
-      "title": "كسّاب",
-      "line": "لعبة ويب جديدة: تطعيس كسّاب، العبها الحين",
-      "href": "games/kassab/",
-      "image": "assets/posters/kassab-keyart.webp"
     }
   ]
 }
