@@ -38,18 +38,10 @@ if(typeof document!=='undefined') {
  }
 
  // Play page: focus the game for keyboard play and offer full screen where the browser allows it.
- const frame=document.querySelector('.play-frame'),fs=document.querySelector('[data-play-fullscreen]');
+ const frame=document.querySelector('.play-frame');
  // iPhone: a game's sound plays even with the silent switch on (Safari 16.4+)
  if(frame){try{if(navigator.audioSession)navigator.audioSession.type='playback';}catch{}}
  frame?.addEventListener('load',()=>frame.focus());
- // Full screen (owner 2026-11-07): real full screen where the browser allows it; elsewhere (iPhone) the game covers the
- // page without the site header or bar. ✕ leaves either. A phone held sideways gets the same view by itself (refresh.css).
- if(frame&&fs){
-  const page=document.querySelector('.play-page'),exit=document.querySelector('[data-play-exit]'),real=document.fullscreenEnabled||document.webkitFullscreenEnabled;
-  const inReal=()=>document.fullscreenElement||document.webkitFullscreenElement;
-  fs.addEventListener('click',()=>{if(real)(page.requestFullscreen||page.webkitRequestFullscreen).call(page);else{document.body.classList.add('play-immersive');scrollTo(0,0);}frame.focus();});
-  exit?.addEventListener('click',()=>{if(inReal())(document.exitFullscreen||document.webkitExitFullscreen).call(document);document.body.classList.remove('play-immersive');});
- }
  // Time-limited offers: hide once their last day (Riyadh time) has passed.
  document.querySelectorAll('[data-ends]').forEach(el=>{const end=new Date(el.dataset.ends+'T23:59:59+03:00');if(!isNaN(end)&&Date.now()>end)el.hidden=true;});
  // Home «جديد» bar: show one addition at a time, every 5 s; pauses on hover/focus, swipe on touch, still with reduced motion.
@@ -81,13 +73,13 @@ if(typeof document!=='undefined'){
   let id='',isNew=0;
   try{id=sessionStorage.getItem('aboden-stats')||'';}catch{}
   if(!id){id=Array.from(crypto.getRandomValues(new Uint8Array(10)),b=>(b%36).toString(36)).join('');isNew=1;try{sessionStorage.setItem('aboden-stats',id);}catch{}}
-  const send=o=>{const body=JSON.stringify({...o,id,p:location.pathname});try{if(navigator.sendBeacon?.(endpoint,new Blob([body],{type:'text/plain'})))return;}catch{}fetch(endpoint,{method:'POST',body,keepalive:true,mode:'no-cors'}).catch(()=>{});};
+  const send=o=>{const body=JSON.stringify({id,p:location.pathname,...o});try{if(navigator.sendBeacon?.(endpoint,new Blob([body],{type:'text/plain'})))return;}catch{}fetch(endpoint,{method:'POST',body,keepalive:true,mode:'no-cors'}).catch(()=>{});};
   let ref='';try{const r=document.referrer&&new URL(document.referrer);if(r&&r.host!==location.host)ref=r.hostname.toLowerCase();}catch{}
   send({t:'v',n:isNew,r:ref});
   let last=Date.now();
   const beat=()=>{if(document.visibilityState==='visible'){last=Date.now();send({t:'p'});}};
   setInterval(beat,60000);
   document.addEventListener('visibilitychange',()=>{if(document.visibilityState==='visible'&&Date.now()-last>30000)beat();});
-  document.addEventListener('click',event=>{const a=event.target.closest?.('a[href]');if(!a)return;try{const h=new URL(a.href).hostname;if(/(^|\.)meta\.com$|(^|\.)oculus\.com$/.test(h))send({t:'e',e:'store'});else if(/(^|\.)roblox\.com$/.test(h))send({t:'e',e:'roblox'});}catch{}});
+  document.addEventListener('click',event=>{const a=event.target.closest?.('a[href]');if(!a)return;if(a.dataset.play){send({t:'e',e:'play',p:`/play/${a.dataset.play}/`});return;}try{const h=new URL(a.href).hostname;if(/(^|\.)meta\.com$|(^|\.)oculus\.com$/.test(h))send({t:'e',e:'store'});else if(/(^|\.)roblox\.com$/.test(h))send({t:'e',e:'roblox'});}catch{}});
  }
 }

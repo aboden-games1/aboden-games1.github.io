@@ -52,7 +52,7 @@ export class Stats extends DurableObject {
     const play = from => Object.fromEntries(q('SELECT route, SUM(seconds) AS s FROM playtime WHERE day>=? GROUP BY route', from).map(x => [x.route, x.s]));
     const ev = from => q('SELECT name, route, SUM(n) AS n FROM events WHERE day>=? GROUP BY name, route', from);
     const top = (kind, from, n = 8) => q('SELECT value, SUM(n) AS n FROM dims WHERE kind=? AND day>=? GROUP BY value ORDER BY n DESC LIMIT ?', kind, from, n);
-    const r1 = routes(today), r7 = routes(d7), r30 = routes(d30), p1 = play(today), p7 = play(d7), p30 = play(d30), e7 = ev(d7), e30 = ev(d30);
+    const r1 = routes(today), r7 = routes(d7), r30 = routes(d30), p1 = play(today), p7 = play(d7), p30 = play(d30), e1 = ev(today), e7 = ev(d7), e30 = ev(d30);
     const liveAt = r => live.filter(x => x.route === r).reduce((s, x) => s + x.n, 0);
     const clicks = (list, name, route) => list.filter(x => x.name === name && x.route === route).reduce((s, x) => s + x.n, 0);
     const daily = [];
@@ -69,7 +69,8 @@ export class Stats extends DurableObject {
         liveNow: g.play ? liveAt(g.play) : 0,
         onPage: liveAt(g.page),
         pageViews: { today: r1[g.page] || 0, week: r7[g.page] || 0, month: r30[g.page] || 0 },
-        plays: g.play ? { today: r1[g.play] || 0, week: r7[g.play] || 0, month: r30[g.play] || 0 } : null,
+        // a play = a «العب الآن» press (games open in their own tab since 2026-11-07) or an old /play/ page view
+        plays: g.play ? { today: (r1[g.play] || 0) + clicks(e1, 'play', g.play), week: (r7[g.play] || 0) + clicks(e7, 'play', g.play), month: (r30[g.play] || 0) + clicks(e30, 'play', g.play) } : null,
         minutes: g.play ? { today: Math.round((p1[g.play] || 0) / 60), week: Math.round((p7[g.play] || 0) / 60), month: Math.round((p30[g.play] || 0) / 60) } : null,
         storeClicks: g.platform === 'quest' ? { week: clicks(e7, 'store', g.page), month: clicks(e30, 'store', g.page) } : null,
       })),
