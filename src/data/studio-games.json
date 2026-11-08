@@ -530,6 +530,75 @@
     "title": "بوابات | عبودين قيمز"
    },
    "source": "Owner, 2026-11-07: «لعبة الويب طلعها صفحة لحالها لانها تختلف عن الشايب وعطها اسم ثاني مختلف»; name chosen by the owner from proposals («بوابات»); the owner confirmed with a screenshot of stage 2 that this is the game at https://3wasfnjd.github.io/Mafateeh/. Text describes only what the published build shows (stages 1–2 seen, 21 stage buttons). Key art = the owner's screenshot (cropped to the board); the gallery shot is an in-game capture taken through GitHub Actions."
+  },
+  {
+   "slug": "saqr",
+   "platform": "web",
+   "title": "صقر",
+   "titleEn": "Saqr",
+   "description": "لعبة طيران من فوق: تسحب بإصبعك وطيارتك تتبعه وتطلق، في عشر مراحل على ساحل المنطقة الشرقية وستة زعماء.",
+   "released": "2026-11-08",
+   "webUrl": "https://3wasfnjd.github.io/saqr/",
+   "genre": "أكشن",
+   "mobile": true,
+   "cardTag": "جديدة · الجوال",
+   "keyArt": {
+    "src": "assets/posters/saqr-keyart.webp",
+    "alt": "شاشة بداية صقر: شعار «صقر · غارة السماء» وطيارة فوق البحر، وقائمة انطلق والمراحل والحظيرة",
+    "w": 860,
+    "h": 1864
+   },
+   "page": {
+    "kicker": "SAQR / WEB",
+    "headline": "صقر.",
+    "tagline": "غارة السماء.",
+    "tag": "متصفح · جوال",
+    "pitch": [
+     "عشر مراحل.",
+     "وستة زعماء."
+    ],
+    "howTo": "الجوال: اضغط بإصبعك في أي مكان واسحب، الطيارة تتبع حركته والرشاشات تطلق طول ما إصبعك على الشاشة · الكمبيوتر: الحركة بالأسهم · الإطلاق بالماوس · القنبلة بالمسافة",
+    "body": [
+     "مراحل على ساحل المنطقة الشرقية، من فجر الخبر وجزيرة تاروت إلى ليل الدمام وعاصفة الجبيل، وفي بعضها زعيم: الحصن الطائر، والبارجة، والحصن الحديدي، والمدمّرة، وحصن الظلام، والعملاق."
+    ],
+    "facts": [
+     "مجانية · تنلعب في المتصفح · الأفضل على الجوال",
+     "انضافت للموقع: ٨ نوفمبر ٢٠٢٦"
+    ],
+    "supportName": "صقر",
+    "supportLabel": "مساعدة بخصوص صقر",
+    "about": {
+     "title": [
+      "رشاشات وجوائز.",
+      "وحظيرة تطوير."
+     ],
+     "paragraphs": [
+      "أربعة أسلحة بذخيرة: رشاشات الجناح، والرشاش الدوّار، والصواريخ الموجهة، والمدفع الخارق. ولما تخلص الذخيرة ترجع للرشاش المزدوج. والجوائز العائمة تمر من فوقها وتلتقطها.",
+      "القنبلة تمسح رصاص العدو من الشاشة وتضرب كل الأعداء. ولكل مرحلة نجمة لإنهائها ونجمتين لتحدياتها، والعملات تطوّر فيها طيارتك من الحظيرة. والتقدم ينحفظ في متصفحك."
+     ]
+    },
+    "shots": [
+     {
+      "src": "assets/posters/saqr-shot-1.webp",
+      "alt": "تشكيل مقاتلات العدو ينزل، وطيارتك تطلق من تحت"
+     },
+     {
+      "src": "assets/posters/saqr-shot-2.webp",
+      "alt": "سلسلة إصابات ×1.5 ومقاتلات بنفسجية فوق الغيوم"
+     },
+     {
+      "src": "assets/posters/saqr-shot-3.webp",
+      "alt": "«تم التطهير» بعد ما خلصت الموجة"
+     },
+     {
+      "src": "assets/posters/saqr-shot-4.webp",
+      "alt": "القاذفة الكبيرة وشريط هيكلها فوق، وطيارتك تراوغ رصاصها"
+     }
+    ],
+    "tallShots": true,
+    "title": "صقر | عبودين قيمز"
+   },
+   "source": "Owner, 2026-11-08: «https://3wasfnjd.github.io/saqr/ لعبة جديدة اضفها للموقع وخذ صور منها». Text from the repository's web README and the game's own screens (3wasfnjd/saqr, web/ «غارة صقر»); images are captures of the published build taken through a GitHub Actions run on 2026-11-08."
   }
  ]
 }
