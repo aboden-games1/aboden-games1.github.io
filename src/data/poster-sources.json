@@ -209,5 +209,35 @@
     "repository": "3wasfnjd/Mafateeh",
     "sha256": "6f4a1951d7fe2aed3adceb0aa55c4d9d787f0d8c520de65a02391d2c21d77b8c",
     "note": "In-game capture of the published web build at https://3wasfnjd.github.io/Mafateeh/ (stage 1), taken 2026-11-07 in Chromium at 1280x720 by a GitHub Actions run. No editing."
+  },
+  "saqr-keyart.webp": {
+    "source": "in-game-capture",
+    "repository": "3wasfnjd/saqr",
+    "sha256": "ae29df61ea2e102cc8ec8afd2050a8cac449d4275b8cad2cb6cf9b5db150a856",
+    "note": "Capture of the published Saqr web build (title screen), taken 2026-11-08 by a GitHub Actions run in Chromium at 430x932 (device scale 2). No editing."
+  },
+  "saqr-shot-1.webp": {
+    "source": "in-game-capture",
+    "repository": "3wasfnjd/saqr",
+    "sha256": "90e1c215d32d51921a22dff6b1b83312a09f823c2d4c7cf79be200607cce4ce7",
+    "note": "Capture of the published Saqr web build (stage 1 gameplay), taken 2026-11-08 by a GitHub Actions run in Chromium at 430x932 (device scale 2). No editing."
+  },
+  "saqr-shot-2.webp": {
+    "source": "in-game-capture",
+    "repository": "3wasfnjd/saqr",
+    "sha256": "dffc73ab35645f47a8f6fbb36e10d5b8db8b81abb166c2586e062947524adcee",
+    "note": "Capture of the published Saqr web build (stage 1 gameplay), taken 2026-11-08 by a GitHub Actions run in Chromium at 430x932 (device scale 2). No editing."
+  },
+  "saqr-shot-3.webp": {
+    "source": "in-game-capture",
+    "repository": "3wasfnjd/saqr",
+    "sha256": "24dc4c5b0ef37ff0837346853317e260e01fc824fb534a068ff406e0d725344e",
+    "note": "Capture of the published Saqr web build (stage 1 gameplay), taken 2026-11-08 by a GitHub Actions run in Chromium at 430x932 (device scale 2). No editing."
+  },
+  "saqr-shot-4.webp": {
+    "source": "in-game-capture",
+    "repository": "3wasfnjd/saqr",
+    "sha256": "1b84f7677704040acaed273af87684dca8babd957f55950b71f71ef866a61f33",
+    "note": "Capture of the published Saqr web build (stage 1 gameplay), taken 2026-11-08 by a GitHub Actions run in Chromium at 430x932 (device scale 2). No editing."
   }
 }
