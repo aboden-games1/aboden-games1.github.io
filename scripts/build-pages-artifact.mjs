@@ -6,7 +6,7 @@ import { join, dirname } from 'node:path';
 // _site = the Astro build (dist/) + files published earlier that the build no longer produces (.pages-files.json;
 // owner rule: never drop a previously published game or policy file) + build-info.json for the live check.
 const root = process.cwd(), dist = join(root, 'dist'), out = join(root, '_site');
-const rootFiles = new Set(['index.html', '404.html', 'app.js', 'site.css', 'favicon.svg', 'favicon.ico', 'robots.txt', 'sitemap.xml', 'sitemap-index.xml', 'build-info.json', 'CNAME', 'dahrooj-cover.jpg', 'dahrooj-icon.png', 'dahrooj-privacy.html', 'site.webmanifest', 'apple-touch-icon.png', 'icon-192.png', 'icon-512.png', 'df1dae49e31b378c3f151625ceca736b.txt']);
+const rootFiles = new Set(['index.html', '404.html', 'app.js', 'site.css', 'favicon.svg', 'favicon.ico', 'robots.txt', 'sitemap.xml', 'sitemap-index.xml', 'build-info.json', 'CNAME', 'dahrooj-cover.jpg', 'dahrooj-icon.png', 'dahrooj-privacy.html', 'site.webmanifest', 'apple-touch-icon.png', 'icon-192.png', 'icon-512.png', 'df1dae49e31b378c3f151625ceca736b.txt', 'lunch.ics']);
 const siteDirs = new Set(['assets', 'images', 'projects', 'licenses', '_astro', 'games', 'studio', 'team', 'support', 'contact', 'ar', 'ar-lab', 'roblox', 'en', 'play', '.well-known', 'privacy-policies']);
 function safe(path) {
   const parts = String(path).split('/');
